@@ -1,0 +1,21 @@
+.body-section {
+    background-color: aqua;
+    margin: 0;
+    display: flex;
+    font-weight: 200;
+    
+    &__title{
+        font-size: 1.5rem;
+        font-weight: 100;
+        padding: 20px;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    
+    &__col {
+        width: 33%;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    
+}
