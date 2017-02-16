@@ -6,40 +6,133 @@
   <title>Patient Search</title>
   <meta name="keywords" content="" >
   <meta name="description" content="">
+ 
   <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
-  <header class="header-top">
-    <h1 class="header-top__title">Search for Patients</h1>
-  </header>
+
+<header class="header-top">
+    <h1 class="header-top__title">Patients Details</h1>
+</header>
+    
+    <section class="table-layout">
+    
+    <table class="table table-layout__box">
+		<h3>Patient #123</h3>
+    <thead>
+      <tr>
+        <th>MRN</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>DOB</th>
+        <th>SSN</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1234</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>01-01-2000</td>
+        <td>111-22-3333</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+       <td>1234</td>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+        <td>01-01-2000</td>
+        <td>111-22-3333</td>
+        <td>Female</td>
+      </tr>
+      <tr>
+       <td>1234</td>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+        <td>01-01-2000</td>
+        <td>111-22-3333</td>
+        <td>Female</td>
+      </tr>
+    </tbody>
+  </table>
+   
+       <table class="table">
+		<h3>Insurance</h3>
+    <thead>
+      <tr>
+        <th>Policy Holder Name</th>
+        <th>Relationship to Patient</th>
+        <th>Payer Name</th>
+        <th>Group Number</th>
+        <th>Policy Number</th>
+        <th>Address 1</th>
+        <th>Address 2</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th>Employer</th>
+        <th>Medicare Number</th>
+        <th>Medicaide Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>James Bond</td>
+        <td>Self</td>
+        <td>Atena</td>
+        <td>2743891</td>
+        <td>851589688</td>
+        <td>6958 Aviation Blvd</td>
+        <td>Suite C</td>
+        <td>Glen Burnie</td>
+        <td>Maryland</td>
+        <td>21061</td>
+        <td>Nexus Informatics</td>
+        <td>1234</td>
+        <td>1234</td>
+      </tr>
+  
+  
+    </tbody>
+  </table>
+    
+    
+    </section>
     
     <section class="column-layout">
         <div class="column-layout__call-out">
             <h3 class="body-section__title">Patient Information</h3>
-            <form action="/action_page.php">
-                <div class="form-row">
-                    <label class="form-row__label" for="fname">First name:</label>
-                    <input class="form-row__input" type="text" name="fname">
+            <form action="">
+               
+               <div class="form-row">
+				   <label class="form-row__label" for="fname">Patient number: <p class="form-row__text">12345</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="mname">Middle Initial:</label>
-                    <input type="text" class="form-row__input" name="mname">
+					<label class="form-row__label" for="fname">First name: <p class="form-row__text">John</p></label>
+					
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="lname">Last name:</label>
-                    <input class="form-row__input" type="text" name="lname">
+					<label class="form-row__label" for="mname">Middle Initial: <p class="form-row__text">K.</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="gender">Gender:</label>
-                    <input type="text" class="form-row__input" name="gender">
+					<label class="form-row__label" for="lname">Last name: <p class="form-row__text">Doe</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="mrn">MRN:</label>
-                    <input class="form-row__input" type="text" name="mrn">
+					<label class="form-row__label" for="gender">Gender: <p class="form-row__text">Male</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="ssn">SSN: </label>
-                    <input class="form-row__input" type="text" name="ssn">
+					<label class="form-row__label" for="mrn">Email: <p class="form-row__text">john@example.com</p></label>
+                </div>
+                <div class="form-row">
+					<label class="form-row__label" for="ssn">DOB: <p class="form-row__text">01-01-2000</p></label>
+                </div>
+                <div class="form-row">
+					<label class="form-row__label" for="ssn">SSN: <p class="form-row__text">111-22-333</p></label>
                 </div>
             </form> 
             
@@ -78,55 +171,47 @@
         
         <div class="column-layout__call-out">
             <h3 class="body-section__title">Insurance</h3>
-            <form action="/action_page.php">
+            <form action="">
                 <div class="form-row">
-                    <label class="form-row__label" for="address1">Address:</label>
-                    <input class="form-row__input" type="text" name="address1">
+					<label class="form-row__label" for="policy-holder-name">Policy Holder Name: <p class="form-row__text">James Bond</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="address2">Address:</label>
-                    <input class="form-row__input" type="text" name="address2">
+					<label class="form-row__label" for="relationship-to-patient">Relationship to Patient: <p class="form-row__text">Self</p> </label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="city">City:</label>
-                    <input type="text" class="form-row__input" name="city">
+					<label class="form-row__label" for="payer-name">Payer Name: <p class="form-row__text">Atena</p></label>  
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="employer">Employer:</label>
-                    <input class="form-row__input" type="text" name="employer">
+					<label class="form-row__label" for="address2">Address: <p class="form-row__text">6958 Aviation Blvd</p></label>
+                </div>
+                 <div class="form-row">
+					 <label class="form-row__label" for="address1">Address: <p class="form-row__text">Suite C</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="group-number">Group Number:</label>
-                    <input type="text" class="form-row__input" name="group-number">
+					<label class="form-row__label" for="city">City: <p class="form-row__text">Glen Burnie</p></label>
+                </div>
+                  <div class="form-row">
+					  <label class="form-row__label" for="state">State: <p class="form-row__text">Maryland</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="medical-number">Medical Number:</label>
-                    <input class="form-row__input" type="text" name="medical-number">
+					<label class="form-row__label" for="zip">Zip code: <p class="form-row__text">21061</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="medicare-number">Medicare Number: </label>
-                    <input class="form-row__input" type="text" name="medicare-number">
+					<label class="form-row__label" for="employer">Employer: <p class="form-row__text">Nexus Informatics</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="payer-name">Payer Name: </label>
-                    <input class="form-row__input" type="text" name="payer-name">
+					<label class="form-row__label" for="group-number">Group Number: <p class="form-row__text">24743891</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="policy-holder-name">Policy Holder Name: </label>
-                    <input class="form-row__input" type="text" name="policy-holder-name">
+					<label class="form-row__label" for="group-number">Policy Number: <p class="form-row__text">851586966</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="relationship-to-patient">Relationship to Patient: </label>
-                    <input class="form-row__input" type="text" name="relationship-to-patient">
+					<label class="form-row__label" for="medical-number">Medical Number: <p class="form-row__text">12345</p></label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="state">State: </label>
-                    <input class="form-row__input" type="text" name="state">
-                </div>
-                <div class="form-row">
-                    <label class="form-row__label" for="zip">Zip code: </label>
-                    <input class="form-row__input" type="text" name="zip">
-                </div>
+					<label class="form-row__label" for="medicare-number">Medicare Number: <p class="form-row__text">12345</p> </label>
+				</div>
+                
             </form> 
             
             <h3 class="body-section__title">Risk Level</h3>
@@ -154,16 +239,28 @@
             <h3 class="body-section__title">Diagnosis</h3>
             <form action="/action_page.php">
               <div class="form-row">
-                    <label class="form-row__label" for="description">Description:</label>
-                    <input class="form-row__input" type="text" name="description">
+				  <label class="form-row__label" for="description">Description:
+				  <ol>
+					  <li class="form-row__list">Neoplasm of uncertain behavior of skin</li>
+					  <li class="form-row__list">Squamous cell carcinoma skin of other part of trunk</li>
+			     </ol>
+               </label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="diagnosis">Diagnosis:</label>
-                    <input type="text" class="form-row__input" name="diagnosis">
+                    <label class="form-row__label" for="diagnosis">Diagnosis:
+						<ol>
+							  <li class="form-row__list">A</li>
+							  <li class="form-row__list">B</li>
+						 </ol>
+                    </label>
                 </div>
                 <div class="form-row">
-                    <label class="form-row__label" for="icd-code">ICD Code:</label>
-                    <input class="form-row__input" type="text" name="icd-code">
+                    <label class="form-row__label" for="icd-code">ICD Code:
+						 <ol>
+							  <li class="form-row__list">D48.5</li>
+							  <li class="form-row__list">C44.529</li>
+						 </ol>
+                   </label>
                 </div>
                 
                   <h3 class="body-section__title">Procedure</h3>
@@ -194,18 +291,12 @@
         
         
     </section>
-
-  
-
-
-
-  
+    
 
   
   <footer class="site-footer">
     <p>Copyright &copy; <script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script> CSSi. All rights reserved. <a href="#">More info</a></p>
   </footer>
-    
-
 </body>
+    
 </html>

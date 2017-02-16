@@ -1,0 +1,11 @@
+.table-layout {
+	width: 100%;
+	color: $mainBlue;
+	background-color: aqua;
+	padding: 20px;
+	
+	&__box{
+		width: 100%;
+	}
+	
+}

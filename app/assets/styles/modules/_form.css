@@ -2,14 +2,25 @@
 	padding: 10px 0;
 	display:  flex;
 
+	&__text{
+		font-size: 1.5rem;
+		display: inline;
+		font-weight: 200;
+	}
 
-&__label {
-	padding: 5px;
-}
+	&__list{
+		font-size: 1.5rem;
+		font-weight: 200;
+	}
+	
+	
+	&__label {
+		padding: 5px;
+	}
 
-&__input {
-	flex: 1;
-}
+	&__input {
+		flex: 1;
+	}
     
     }
 
